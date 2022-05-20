@@ -1,0 +1,17 @@
+.likeButton,
+.dislikeButton {
+  margin-right: 0.2rem;
+  border: none;
+  background: none;
+}
+
+.liked,
+.disliked {
+  background: #b2a5a3 !important;
+}
+
+.likesCounter,
+.dislikesCounter {
+  margin-left: 0.5rem;
+  color: --clr-darkBlue;
+}

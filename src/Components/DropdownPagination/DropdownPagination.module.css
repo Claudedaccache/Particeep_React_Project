@@ -1,0 +1,24 @@
+.PaginationDropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: -2.0rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+.PaginationBtn {
+  background-color: var(--clr-blue);
+}
+
+@media screen and (min-width: 500px) {
+  .PaginationDropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    border: none;
+  }
+}

@@ -1,0 +1,117 @@
+.image {
+  height: 20rem;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.card {
+  margin: 1rem 0.4rem;
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 6px 6px 5px rgb(211, 210, 210) inset;
+}
+
+.CardsTitles {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.cardTitle {
+  font-weight: bold;
+  font-size: 1.4rem;
+  max-width: 10rem;
+}
+.cardCategory {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.ratingSection {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+.likeSection,
+.dislikeSection {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-right: 0.5rem;
+  background: none;
+  border: none;
+}
+.likeSection > span,
+.dislikeSection > span {
+  margin-right: 0.3rem;
+  font-size: 1.2rem;
+}
+.likeSection > p,
+.dislikeSection > p {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.DeleteSection {
+  display: none;
+  background-color: red;
+  width: 100%;
+  height: 1rem;
+  z-index: 10;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.card:hover > .DeleteSection {
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(253, 92, 92);
+  border: none;
+  width: 100%;
+  height: 2.1rem;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  animation: ShowDeleteBtn 0.4s ease-in-out forwards;
+}
+
+.DeleteBtn {
+  color: white;
+}
+
+.CardLowerSection {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.watchBtn {
+  width: 6rem;
+}
+
+.LikesIcon > button {
+  background: none;
+  border: none;
+}
+.noMoviesMsg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@keyframes ShowDeleteBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(-250%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

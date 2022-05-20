@@ -1,0 +1,31 @@
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 4.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  z-index: 100;
+}
+
+
+.toggleBtn{
+  background-color: var(--clr-blue);
+
+}
+
+@media screen and (min-width: 500px) {
+
+
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    border: none;
+  }
+
+}

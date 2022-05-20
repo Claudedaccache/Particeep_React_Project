@@ -1,0 +1,29 @@
+:root {
+  --clr-white: #fff;
+  --clr-darkBlue: hsl(205, 86%, 17%);
+  --clr-oceanBlue: hsl(205, 86%, 81%);
+  --clr-blue: hsl(205, 78%, 60%);
+  --clr-lightBlue: hsl(205, 90%, 76%);
+  --clr-grey: hsl(209, 34%, 30%);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --transition: all 0.3s linear;
+}
+body {
+  background-image: url("./Images/Background_image.png");
+}
+
+.FilteringSection {
+  margin: 1.5rem 0 1rem 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+  .FilteringSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
