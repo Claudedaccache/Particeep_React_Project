@@ -7,7 +7,6 @@ const AppContext = React.createContext();
 const initialState = {
   loading: true,
   movies: [],
-  btnClicked: false,
 };
 
 const AppProvider = ({ children }) => {
